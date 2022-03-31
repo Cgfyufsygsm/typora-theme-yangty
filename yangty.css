@@ -1,12 +1,21 @@
+/*
+Theme Name: YangTY
+Theme URL: https://github.com/Cgfyufsygsm/typora-theme-yangty/
+Author URI: https://github.com/Cgfyufsygsm/
+Description: A dark Typora theme that offers relatively low contrast and less harm to eyes.
+Version: 0.0.2-beta
+Tags: dark, typora
+*/
+
 :root {
-    --text-color: hsl(220, 1%, 64%);
+    --text-color: hsl(220, 1%, 66%);
     /* 主字体颜色 */
-    --text-color2: hsl(198, 4%, 62%);
+    --text-color2: hsl(198, 4%, 64%);
     /* 次字体颜色 */
-    --bg-color: hsl(240, 7%, 17%);
+    --bg-color: hsl(240, 8%, 17%);
     /* 主背景色 */
-    --bg-color2: hsl(234, 7%, 16%);
-    --bg-color-code: hsl(235, 6%, 19%);
+    --bg-color2: hsl(234, 8%, 16%);
+    --bg-color-code: hsl(236, 8%, 18%);
     --line-color: #555;
     --link-color: #6497c2;
 
@@ -16,7 +25,7 @@
     --table-border-color: #4e4e4e;
 
     --primary-color: rgb(131, 172, 199);
-    --side-bar-bg-color: hsl(240, 7%, 15%);
+    --side-bar-bg-color: hsl(240, 8%, 15%);
     /* 侧边栏颜色 */
     --active-file-text-color: inherit;
     --active-file-border-color: var(--primary-color);
@@ -101,7 +110,7 @@ li {
 
 #write {
     max-width: 1100px;
-    text-align: justify;
+    text-align: left;
 }
 
 #write>h1:first-child {
@@ -491,11 +500,54 @@ p.mathjax-block,
 }
 
 #md-notification {
-    background: #eee;
+    background: var(--bg-color-code);
+    padding-right: 20px;
 }
+
+#md-notification .btn {
+    background: var(--bg-color2);
+    border: none;
+}
+
+/* megamenu */
 
 .megamenu-menu-panel .btn {
     border: 1px solid #ccc;
+}
+
+.megamenu-menu {
+    background-color: var(--bg-color);
+}
+
+.megamenu-content {
+    background: var(--bg-color2) !important;
+}
+
+.megamenu-opened header {
+    background: var(--bg-color-code) !important;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: var(--table-bg-color);
+}
+
+#recent-file-panel-action-btn {
+    background-color: var(--bg-color);
+    border: 0.5px solid var(--table-border-color);
+    border-radius: 5px;
+}
+
+#recent-file-panel-search-input {
+    border-radius: 5px;
+}
+
+.long-btn {
+    border-radius: 10px;
+    border: 0.5px solid var(--table-border-color);
+}
+
+.export-detail, .export-items-list-control, .export-item.active {
+    background-color: var(--bg-color2) !important;
 }
 
 /* TOC */
@@ -618,7 +670,7 @@ p.mathjax-block,
 }
 
 .cm-s-inner .cm-variable-3 {
-    color: var(--code-color-red);
+    color: var(--code-color-purple);
 }
 
 .cm-s-inner .cm-variable {
