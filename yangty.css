@@ -3,7 +3,7 @@ Theme Name: YangTY
 Theme URL: https://github.com/Cgfyufsygsm/typora-theme-yangty/
 Author URI: https://github.com/Cgfyufsygsm/
 Description: A dark Typora theme that offers relatively low contrast and less harm to eyes.
-Version: 0.0.2-beta
+Version: 0.0.3-beta
 Tags: dark, typora
 */
 
@@ -555,6 +555,12 @@ p.mathjax-block,
     background-color: var(--bg-color2);
     color: var(--text-color);
     border-top: none;
+}
+
+.md-toc-content {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    background-color: var(--side-bar-bg-color);
 }
 
 /* scrollbar */
