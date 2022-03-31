@@ -12,7 +12,23 @@ Relatively low contrast and carefully chosen color offers a less eye-tiring expe
 
 ## Preview
 
+Basic markdown features and TOC:
 
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview1.png?raw=true)
+
+Lists and table:
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview2.png?raw=true)
+
+Codeblock:
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview3.png?raw=true)
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview4.png?raw=true)
+
+Headings: 
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview5.png?raw=true)
 
 ## Contribution
 
