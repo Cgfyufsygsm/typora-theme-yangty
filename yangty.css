@@ -1,38 +1,60 @@
 :root {
-    --text-color: rgb(132, 135, 151);
+    --text-color: hsl(220, 1%, 64%);
     /* 主字体颜色 */
-    --text-color2: rgb(107, 116, 122);
+    --text-color2: hsl(198, 4%, 62%);
     /* 次字体颜色 */
-    --bg-color: #1a1a1f;
+    --bg-color: hsl(240, 7%, 17%);
     /* 主背景色 */
-    --bg-color2: rgb(27, 28, 34);
-    --bg-color-code: #20232c;
+    --bg-color2: hsl(234, 7%, 16%);
+    --bg-color-code: hsl(235, 6%, 19%);
     --line-color: #555;
-    --link-color: #5892ff;
+    --link-color: #6497c2;
 
-    --primary-color: rgb(255, 141, 141);
-    --side-bar-bg-color: #1c1c20; /* 侧边栏颜色 */
+    /* table */
+    --table-bg-color: hsl(240, 8%, 18%);
+    --table-bg-darker-color: hsl(240, 8%, 16%);
+    --table-border-color: #4e4e4e;
+
+    --primary-color: rgb(131, 172, 199);
+    --side-bar-bg-color: hsl(240, 7%, 15%);
+    /* 侧边栏颜色 */
     --active-file-text-color: inherit;
     --active-file-border-color: var(--primary-color);
-    --active-file-bg-color: #1b222e;
+    --active-file-bg-color: #23272b;
 
     --control-text-color: #abaaa9;
-    --primary-btn-border-color: #f9826c;
-    --primary-btn-text-color: #f9826c;
+    --primary-btn-border-color: var(--primary-color);
+    --primary-btn-text-color: var(--primary-color);
     --window-border: 0 solid #0d1117;
-    --item-hover-bg-color: #161b22;
-    --item-hover-text-color: #f9826c;
-    --meta-content-color: #f9826c;
-    --search-select-text-color: #f9826c;
+    --item-hover-bg-color: #202327;
+    --item-hover-text-color: var(--primary-color);
+    --meta-content-color: var(--primary-color);
+    --search-select-text-color: var(--primary-color);
     --control-text-color: var(--text-color);
     --control-text-hover-color: var(--text-color);
-    --heading-char-color: #f9826c;
+    --heading-char-color: var(--primary-color);
     --active-toggle-btn-color: #192133;
     --blur-text-color: rgba(200, 200, 200, 0.33);
     --rawblock-edit-panel-bd: var(--item-hover-bg-color) !important;
     --select-text-bg-color: rgba(53, 82, 116, 0.836) !important;
-    --select-text-font-color: #fff !important;
+    --select-text-font-color: rgb(179, 179, 179) !important;
     --color-border-secondary: #21262d !important;
+
+    --code-color-purple: #b189ce;
+    --code-color-red: #c96268;
+    --code-color-orange: rgb(202, 144, 110);
+    --code-color-orange2: rgb(199, 163, 96);
+    --code-color-gray: #696969;
+    --code-color-blue: #6fa0df;
+    --code-color-cyan: #90bbcc;
+    --code-color-white: rgb(185, 185, 185);
+    --code-color-yellow: #beaf64;
+
+    /* scrollbar */
+    --menu-divider-color: hsl(220, 16%, 29%);
+    /* scrollbar color */
+    --scrollbar-thumb-color: var(--menu-divider-color);
+    --scrollbar-track-color: rgba(95, 97, 101, 0.3);
 }
 
 html,
@@ -50,11 +72,11 @@ h4,
 h5,
 h6 {
     color: var(--text-color);
-    font-family: sans-serif;
 }
 
 html {
     font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 hr {
@@ -69,12 +91,16 @@ li {
     color: var(--text-color);
 }
 
+.md-url {
+    font-family: 'Consolas';
+}
+
 .md-inline-math script {
     color: var(--text-color);
 }
 
 #write {
-    max-width: 1000px;
+    max-width: 1100px;
     text-align: justify;
 }
 
@@ -131,7 +157,7 @@ h6 {
 p {
     color: var(--text-color);
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.67rem;
     margin: 0 0 1.25rem;
 }
 
@@ -245,25 +271,57 @@ a:hover {
     text-decoration: underline;
 }
 
+/* table */
+
 table {
     color: var(--text-color);
     margin-bottom: 20px
 }
 
+.md-rawblock > .md-rawblock-container table,
+.md-table-fig,
+.md-table-fig:active {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 table th,
 table td {
     padding: 8px;
-    line-height: 1.25rem;
+    line-height: 2.1rem;
     vertical-align: top;
-    border-top: 1px solid rgb(126, 126, 126)
+    border-top: 1px solid var(--table-border-color);
 }
 
-table th {
-    font-weight: bold
+table tr th {
+    font-weight: bold;
+    background-color: var(--table-bg-darker-color);
+    border-left: 1px solid var(--table-border-color);
+    border-right: 1px solid var(--table-border-color);
+    border-top: 1px solid var(--table-border-color);
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
 }
+
+
+table tr td {
+    border-left: 1px solid var(--table-border-color);
+    border-right: 1px solid var(--table-border-color);
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+  }
 
 table thead th {
     vertical-align: bottom
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: var(--table-bg-darker-color);
+}
+
+table tbody tr:nth-child(2n + 1) {
+    background-color: var(--table-bg-color);
 }
 
 table caption+thead tr:first-child th,
@@ -292,6 +350,7 @@ code, .md-fences {
     font-size: 0.9em;
     margin-left: 0.2em;
     margin-right: 0.2em;
+    border-radius: 10px;
 }
 
 .md-fences {
@@ -352,10 +411,12 @@ blockquote {
     margin: 1.1rem 0 1.11111rem;
     padding: 1rem 1.11111rem 1rem 1.05556rem;
     border-left: 4px solid var(--primary-color);
+    border-radius: 6px;
 }
 
 blockquote,
 blockquote p {
+    font-size: 0.95rem;
     line-height: 1.8rem;
     color: var(--text-color2);
 }
@@ -364,10 +425,10 @@ blockquote p {
     font-family: Consolas;
     line-height: 1.5em;
     min-height: 30px;
-    background: var(--bg-color2);
-    padding: 1.3em;
+    background: var(--bg-color-code);
+    padding: 1em;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.9em;
     /* padding-bottom: 1.5em;
 	padding-top: 1em; */
     margin-top: 1em;
@@ -377,12 +438,16 @@ blockquote p {
 	border-right: 0 #f8f8f8 solid;
 	margin-right: 0;
 	margin-bottom: 2em;*/
+    border-radius: 10px;
 }
 
 .MathJax_Display {
-    font-size: 0.9em;
     margin-top: 0.5em;
     margin-bottom: 0;
+}
+
+.md-math-block {
+    font-size: 1.1rem;
 }
 
 p.mathjax-block,
@@ -440,34 +505,55 @@ p.mathjax-block,
     border-top: none;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track:hover {
+    background-color: var(--scrollbar-track-color) !important;
+    border-radius: 4px;
+}
+
+/* scrollbar thumb */
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-thumb-color) !important;
+    border-radius: 4px;
+}
 
 /* 代码高亮部分 */
-/*
-  Name:       material
-  Author:     Mattia Astorino (http://github.com/equinusocio)
-  Website:    https://material-theme.site/
-*/
 
 .cm-s-inner.CodeMirror {
     background-color: var(--bg-color-code);
-    color: #EEFFFF;
+    color: var(--code-color-white);
+    font-family: 'Fira Code', 'Consolas', '微软雅黑';
+    font-weight: 430;
+    letter-spacing: 0 !important;
+    /* line-height: 1.3rem; */
 }
 
 .cm-s-inner .CodeMirror-gutters {
-    background: #20252c;
+    background: var(--bg-color-code);
     color: #545454;
     border: none;
 }
 
+.cm-s-inner .CodeMirror-line {
+    padding-left: 0.7rem;
+}
 
 .cm-s-inner .CodeMirror-guttermarker,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
 .cm-s-inner .CodeMirror-linenumber {
-    color: #42504a;
+    color: #727e78;
 }
 
 .cm-s-inner .CodeMirror-cursor {
-    border-left: 1px solid #FFCC00 !important;
+    border-left: 1px solid var(--code-color-cyan) !important;
 }
 
 .cm-s-inner div.CodeMirror-selected {
@@ -495,84 +581,77 @@ p.mathjax-block,
 }
 
 .cm-s-inner .cm-keyword {
-    color: #C792EA;
-    font-weight: bold;
+    color: var(--code-color-purple);
 }
 
 .cm-s-inner .cm-operator {
-    color: #89DDFF;
-}
-
-.cm-s-inner .cm-variable-2 {
-    color: #EEFFFF;
-}
-
-.cm-s-inner .cm-variable-3,
-.cm-s-inner .cm-type {
-    color: #f07178;
+    color: var(--code-color-cyan);
 }
 
 .cm-s-inner .cm-builtin {
-    color: #FFCB6B;
+    color: var(--code-color-yellow);
 }
 
 .cm-s-inner .cm-atom {
-    color: #F78C6C;
+    color: var(--code-color-orange);
 }
 
 .cm-s-inner .cm-number {
-    color: #FF5370;
+    color: var(--code-color-orange);
 }
 
 .cm-s-inner .cm-def {
-    color: #82AAFF;
+    color: var(--code-color-blue);
 }
 
 .cm-s-inner .cm-string {
-    color: #C3E88D;
-}
-
-.cm-s-inner .cm-string-2 {
-    color: #f07178;
+    color: var(--code-color-orange2);
 }
 
 .cm-s-inner .cm-comment {
-    color: #545454;
+    color: var(--code-color-gray);
+}
+
+
+.cm-s-inner .cm-variable-2 {
+    color: var(--code-color-red);
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: var(--code-color-red);
 }
 
 .cm-s-inner .cm-variable {
-    color: #f07178;
+    color: var(--code-color-red);
 }
 
 .cm-s-inner .cm-tag {
-    color: #FF5370;
+    color: var(--code-color-red);
 }
 
 .cm-s-inner .cm-meta {
-    color: #FFCB6B;
+    color: var(--code-color-orange);
 }
 
 .cm-s-inner .cm-attribute {
-    color: #C792EA;
+    color: var(--code-color-purple);
 }
 
 .cm-s-inner .cm-property {
-    color: #C792EA;
+    color: var(--code-color-purple);
 }
 
 .cm-s-inner .cm-qualifier {
-    color: #DECB6B;
+    color: var(--code-color-yellow);
 }
 
-.cm-s-inner .cm-variable-3,
 .cm-s-inner .cm-type {
-    color: #DECB6B;
-    font-weight: bold;
+    color: var(--code-color-purple);
 }
 
 .cm-s-inner .cm-error {
-    color: rgba(255, 255, 255, 1.0);
-    background-color: #FF5370;
+    color: var(--code-color-white);
+    background-color: var(--code-color-red);
 }
 
 .cm-s-inner .CodeMirror-matchingbracket {
