@@ -1,10 +1,19 @@
+---
+front matter
+this is a front matter
+front
+yaml: 
+sb: 
+date: xxxx/xx/xx
+---
+
 [TOC]
 
 ## md 基本功能测试
 
 你好，这里是**加粗**，*斜体*和~~删除线~~的测试。
 
-> 然后呢我这里引用了一句话。
+> 然后呢我这里引用了一句话。中文填充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充充填充
 >
 > 好吧两句也不是不可以。
 
@@ -54,13 +63,16 @@ $$
 众所周知代码块有行内 `printf("%d\n", cnt);` 和行间之分。
 
 ```cpp
+/* 多行注释测试
+这里是多行注释
+x
+*/
+
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = (a); i <= (b); ++i)
 #define DEC(i, a, b) for (int i = (a); i >= (b); --i)
 #define VEC(i, v) for (int i = 0; i < (int)v.size(); ++i)
 #define il inline
-#define clr(f, n) memset(f, 0, (sizeof(int)) * (n))
-#define cpy(f, g, n) memcpy(f, g, (sizeof(int)) * (n))
 
 using namespace std;
 
@@ -81,7 +93,7 @@ ll qPow(ll a, ll b = mod - 2) {
     return ret;
 }
     
-int main() {
+int main() { // 我是注释哦
     return 0;
 }
 

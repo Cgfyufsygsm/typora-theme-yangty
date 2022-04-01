@@ -6,8 +6,9 @@ Relatively low contrast and carefully chosen color offers a less eye-tiring expe
 
 ## How to install
 
+1. Click here and download `typora-theme-yangty.zip` in the latest release.
 1. Open Typora->Theme->Open Theme Folder.
-2. Put yangty.css and the folder yangty into the theme folder.
+2. Unzip `typora-theme-yangty.zip` and put yangty.css and the folder yangty into the theme folder.
 3. Restart Typora and choose the theme YangTY.
 
 ## Preview
@@ -50,9 +51,9 @@ MIT
 
 ## 安装方法
 
-1. 从[这里面](https://github.com/Cgfyufsygsm/typora-theme-yangty/releases)找到最新版本，下载。
+1. 从 [releases](https://github.com/Cgfyufsygsm/typora-theme-yangty/releases) 中找到最新版本，下载 `typora-theme-yangty.zip`。
 2. 打开 Typora，在菜单中选择“主题”，然后单击“打开主题文件夹”。
-3. 将 `yangty.css` 拖入主题文件夹。
+3. 将压缩包内的内容拖入主题文件夹。
 4. 重启 Typora 并将主题选择为“Yangty”。
 
 ## 预览
