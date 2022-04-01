@@ -3,7 +3,7 @@ Theme Name: YangTY
 Theme URL: https://github.com/Cgfyufsygsm/typora-theme-yangty/
 Author URI: https://github.com/Cgfyufsygsm/
 Description: A dark Typora theme that offers relatively low contrast and less harm to eyes.
-Version: 0.0.4-beta
+Version: 0.0.5-beta
 Tags: dark, typora
 */
 
@@ -60,21 +60,21 @@ Tags: dark, typora
 
 :root {
     --text-color: hsl(220, 1%, 66%);
-    /* 主字体颜色 */
     --text-color2: hsl(198, 4%, 64%);
-    /* 次字体颜色 */
+    --meta-content-color: var(--code-color-orange2);
     --bg-color: hsl(240, 8%, 17%);
-    /* 主背景色 */
+
     --bg-color2: hsl(234, 8%, 16%);
     --bg-color-code: hsl(236, 8%, 18%);
     --line-color: #555;
     --link-color: #6497c2;
 
+    /* Line height definition */
     --text-line-height: 1.61;
     --code-line-height: 1.42857143;
     --meta-line-height: 1.58;
     --quote-line-height: 1.8;
-    --table-line-height: 2.1;
+    --table-line-height: 1.75;
 
     /* table */
     --table-bg-color: hsl(240, 8%, 18%);
@@ -83,7 +83,6 @@ Tags: dark, typora
 
     --primary-color: rgb(131, 172, 199);
     --side-bar-bg-color: hsl(240, 8%, 15%);
-    /* 侧边栏颜色 */
     --active-file-text-color: inherit;
     --active-file-border-color: var(--primary-color);
     --active-file-bg-color: hsl(225, 10%, 14%);
@@ -106,6 +105,7 @@ Tags: dark, typora
     --select-text-font-color: rgb(179, 179, 179) !important;
     --color-border-secondary: #21262d !important;
 
+    /* highlight */
     --code-color-purple: #b189ce;
     --code-color-red: #c96268;
     --code-color-orange: rgb(202, 144, 110);
@@ -139,7 +139,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-color);
+    color: var(--text-color2);
 }
 
 html {
@@ -189,7 +189,7 @@ li {
 }
 
 h1 {
-    font-weight: normal;
+    font-size: 2.3rem;
     line-height: 4rem;
     margin-top: 1.6rem;
     padding-bottom: 0.4rem;
@@ -197,29 +197,30 @@ h1 {
 }
 
 h2 {
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-size: 2rem;
     line-height: 3rem;
     margin-top: 1.4rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px double var(--line-color)
+    padding-bottom: 0.7rem;
+    border-bottom: 2.7px double var(--line-color)
 }
 
 h3 {
-    font-weight: normal;
+    font-size: 1.8rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1.8px double var(--line-color)
 }
 
 h4 {
-    font-weight: normal;
+    font-size: 1.6rem;
 }
 
 h5 {
-    font-size: 1.125rem;
-    font-weight: normal;
+    font-size: 1.425rem;
 }
 
 h6 {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 p {
@@ -339,6 +340,20 @@ a:hover {
     text-decoration: underline;
 }
 
+/* mark */
+mark {
+    background: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 1.5px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 0.07rem;
+    padding-left: 0.27rem;
+    padding-right: 0.27rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
 /* table */
 
 table {
@@ -411,26 +426,29 @@ table tbody+tbody {
 }
 
 code {
-    font-weight: 500;
+    color: var(--code-color-orange);
+    background-color: var(--bg-color2);
+    font-weight: medium;
+    padding: 0.2rem;
 }
 
 code, .md-fences {
-    padding: .5em;
+    padding: .3em;
     background: var(--bg-color-code);
     font-family: var(--monospace);
     /*border: 1px solid rgb(255, 0, 0);*/
-    padding: .1em;
     font-size: 0.9em;
-    margin-left: 0.2em;
-    margin-right: 0.2em;
     border-radius: 10px;
 }
 
 .md-fences {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
     padding-left: 0.5em;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
 }
+
 
 .task-list {
     padding-left: 0;
@@ -442,7 +460,6 @@ code, .md-fences {
 
 .task-list-item input {
     top: 3px;
-
 }
 
 .task-list-item input:before {
@@ -452,30 +469,26 @@ code, .md-fences {
     height: 1rem;
     vertical-align: middle;
     text-align: center;
-    border: 1px solid gray;
-    background-color: #fdfdfd;
+    border: none;
+    background-color: var(--item-hover-bg-color) !important;
     margin-left: 0;
-    margin-top: -0.5rem;
+    margin-top: -1rem;
 }
 
 .task-list-item input:checked:before,
 .task-list-item input[checked]:before {
-    content: '\25FC';
-    /*◘*/
-    font-size: 0.8125rem;
-    line-height: 0.9375rem;
+    content: "\2713";
+    font-size: 1.2125rem;
+    line-height: .9375rem;
     margin-top: -1rem;
 }
 
-/* Chrome 29+ */
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
-    .task-list-item input:before {
-        margin-top: -0.2rem;
-    }
 
+    .task-list-item input:before,
     .task-list-item input:checked:before,
     .task-list-item input[checked]:before {
-        margin-top: -0.2rem;
+        margin-top: -1rem;
     }
 }
 
@@ -502,15 +515,8 @@ blockquote p {
     font-weight: medium;
     line-height: var(--meta-line-height);
     font-size: medium;
-    /* padding-bottom: 1.5em;
-	padding-top: 1em; */
     margin-top: 1em;
     color: var(--text-color2);
-    /*border-left: 0 #f8f8f8 solid;
-	margin-left: 0;
-	border-right: 0 #f8f8f8 solid;
-	margin-right: 0;
-	margin-bottom: 2em;*/
     border-radius: 10px;
 }
 
@@ -674,6 +680,16 @@ p.mathjax-block,
     border-radius: 4px;
 }
 
+/* footer */
+
+.typora-sourceview-on #toggle-sourceview-btn {
+    background: none;
+}
+
+footer.ty-footer {
+    border-top: 0.5px solid var(--table-border-color);
+}
+
 /* 代码高亮部分 */
 
 .cm-s-inner.CodeMirror {
@@ -700,7 +716,7 @@ p.mathjax-block,
 .cm-s-inner .CodeMirror-guttermarker-subtle,
 .cm-s-inner .CodeMirror-linenumber {
     font-family: 'Consolas', monospace !important;
-    color: #727e78;
+    color: var(--code-color-gray);
 }
 
 .cm-s-inner .CodeMirror-cursor {
@@ -806,6 +822,132 @@ p.mathjax-block,
 }
 
 .cm-s-inner .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+
+.cm-s-typora-default.CodeMirror {
+    background-color: var(--bg-color);
+    color: var(--code-color-white);
+    font-weight: 400;
+    font-family: var(--monospace);
+    font-size: 0.9rem !important;
+    line-height: var(--text-line-height) !important;
+    letter-spacing: inherit;
+    /* line-height: 1.3rem; */
+}
+
+.cm-s-typora-default .CodeMirror-guttermarker,
+.cm-s-typora-default .CodeMirror-guttermarker-subtle,
+.cm-s-typora-default .CodeMirror-linenumber {
+    font-family: var(--monospace);
+    color: var(--code-color-whitre);
+}
+
+.cm-s-typora-default .CodeMirror-cursor {
+    border-left: 2px solid var(--code-color-cyan) !important;
+    z-index: 3;
+}
+
+.cm-s-typora-default div.CodeMirror-selected {
+    background: rgba(97, 97, 97, 0.2) !important;
+}
+
+.cm-s-typora-default.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(97, 97, 97, 0.2) !important;
+}
+
+.cm-s-typora-default .CodeMirror-line::selection,
+.cm-s-typora-default .CodeMirror-line>span::selection,
+.cm-s-typora-default .CodeMirror-line>span>span::selection {
+    background: rgba(128, 203, 196, 0.2);
+}
+
+.cm-s-typora-default .CodeMirror-line::-moz-selection,
+.cm-s-typora-default .CodeMirror-line>span::-moz-selection,
+.cm-s-typora-default .CodeMirror-line>span>span::-moz-selection {
+    background: rgba(128, 203, 196, 0.2);
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: var(--bg-color-code);
+}
+
+.cm-s-typora-default .cm-keyword {
+    color: var(--code-color-purple);
+}
+
+.cm-s-typora-default .cm-operator {
+    color: var(--code-color-cyan);
+}
+
+.cm-s-typora-default .cm-builtin {
+    color: var(--code-color-yellow);
+}
+
+.cm-s-typora-default .cm-atom {
+    color: var(--code-color-orange);
+}
+
+.cm-s-typora-default .cm-number {
+    color: var(--code-color-orange);
+}
+
+.cm-s-typora-default .cm-def {
+    color: var(--code-color-blue);
+}
+
+.cm-s-typora-default .cm-string {
+    color: var(--code-color-orange2);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: var(--code-color-gray);
+}
+
+
+.cm-s-typora-default .cm-variable-2 {
+    color: var(--code-color-red);
+}
+
+.cm-s-typora-default .cm-variable-3 {
+    color: var(--code-color-purple);
+}
+
+.cm-s-typora-default .cm-variable {
+    color: var(--code-color-red);
+}
+
+.cm-s-typora-default .cm-tag {
+    color: var(--code-color-red);
+}
+
+.cm-s-typora-default .cm-meta {
+    color: var(--code-color-orange);
+}
+
+.cm-s-typora-default .cm-attribute {
+    color: var(--code-color-purple);
+}
+
+.cm-s-typora-default .cm-property {
+    color: var(--code-color-purple);
+}
+
+.cm-s-typora-default .cm-qualifier {
+    color: var(--code-color-yellow);
+}
+
+.cm-s-typora-default .cm-type {
+    color: var(--code-color-purple);
+}
+
+.cm-s-typora-default .cm-error {
+    color: var(--code-color-white);
+    background-color: var(--code-color-red);
+}
+
+.cm-s-typora-default .CodeMirror-matchingbracket {
     text-decoration: underline;
     color: white !important;
 }

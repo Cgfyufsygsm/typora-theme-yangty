@@ -4,6 +4,8 @@ A dark theme for Typora.
 
 Relatively low contrast and carefully chosen color offers a less eye-tiring experience.
 
+Inspired by several dark themes including OneDark, Github-Night, etc.
+
 ## How to install
 
 1. Click here and download `typora-theme-yangty.zip` in the latest release.
@@ -13,27 +15,37 @@ Relatively low contrast and carefully chosen color offers a less eye-tiring expe
 
 ## Preview
 
-Basic markdown features and TOC:
+Basic markdown features: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview1.png?raw=true)
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview1.png?raw=true)
 
-Lists and table:
+(Un)orderd lists and task items: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview2.png?raw=true)
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview2.png?raw=true)
 
-Codeblock:
+Code block (partial), TOC, display MathJax and front-matters: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview3.png?raw=true)
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview3.png?raw=true)
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview4.png?raw=true)
+Code block and tables: 
 
-Headings: 
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview4.png?raw=true)
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview5.png?raw=true)
+Focus mode on: 
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview5.png?raw=true)
+
+Source Code mode: 
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview6.png?raw=true)
+
+Megamenu: 
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview7.png?raw=true)
 
 ## Contribution
 
-Any suggestions and feedback would be very appreciated.
+Any suggestions and feedbacks would be very appreciated. (bug reports, suggestions on choosing color, etc.)
 
 Issues are welcomed, also you can contact i@imyangty.com.
 
@@ -41,13 +53,15 @@ Issues are welcomed, also you can contact i@imyangty.com.
 
 MIT
 
-# Chinese version
+# 简体中文
 
 ## 简介
 
-一款作者为了~~满足自己奇怪 XP~~减少长时间使用 Typora 带来的眼部疲劳的暗式 Typora 主题。
+一款为了减少长时间使用 Typora 带来的眼部疲劳的暗式 Typora 主题。
 
-相对较低的对比度使得对眼睛的刺激更小。
+受 OneDark，Github-Night 等多个主题的启发。
+
+整体对比度中等偏低，长时间使用刺激较小。
 
 ## 安装方法
 
@@ -60,25 +74,34 @@ MIT
 
 可能需要有特殊的上网方法才能看到图片（`https://raw.githubusercontent.com/` 需能被访问）。
 
+基本 MD 功能: 
 
-基本 md 功能以及目录：
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview1.png?raw=true)
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview1.png?raw=true)
+无序/有序/任务列表: 
 
-列表和表格：
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview2.png?raw=true)
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview2.png?raw=true)
+代码框，TOC，front-matter 和行间公式：
 
-代码块：
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview3.png?raw=true)
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview3.png?raw=true)
+代码框和表格：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview4.png?raw=true)
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview4.png?raw=true)
 
-标题：
+专注模式：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/v0.0.3-beta/preview/preview5.png?raw=true)
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview5.png?raw=true)
+
+源代码模式：
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview6.png?raw=true)
+
+菜单：
+
+![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview7.png?raw=true)
 
 ## 反馈
 
-欢迎开 issues 或者直接联系我：i@imyangty.com 来提交您的使用反馈。
+如果有任何 bug/配色上的建议/反馈，欢迎开 issues 或者直接联系我：i@imyangty.com。
