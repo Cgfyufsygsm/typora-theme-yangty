@@ -17,31 +17,31 @@ Inspired by several dark themes including OneDark, Github-Night, etc.
 
 Basic markdown features: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview1.png?raw=true)
+![typora-theme-yangty-preview1](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview1.png)
 
 (Un)orderd lists and task items: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview2.png?raw=true)
+![typora-theme-yangty-preview2](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview2.png)
 
 Code block (partial), TOC, display MathJax and front-matters: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview3.png?raw=true)
+![typora-theme-yangty-preview3](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview3.png)
 
 Code block and tables: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview4.png?raw=true)
+![typora-theme-yangty-preview4](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview4.png)
 
 Focus mode on: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview5.png?raw=true)
+![typora-theme-yangty-preview5](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview5.png)
 
 Source Code mode: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview6.png?raw=true)
+![typora-theme-yangty-preview6](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview6.png)
 
 Megamenu: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview7.png?raw=true)
+![typora-theme-yangty-preview7](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview7.png)
 
 ## Contribution
 
@@ -72,35 +72,33 @@ MIT
 
 ## 预览
 
-可能需要有特殊的上网方法才能看到图片（`https://raw.githubusercontent.com/` 需能被访问）。
-
 基本 MD 功能: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview1.png?raw=true)
+![typora-theme-yangty-preview1](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview1.png)
 
 无序/有序/任务列表: 
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview2.png?raw=true)
+![typora-theme-yangty-preview2](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview2.png)
 
 代码框，TOC，front-matter 和行间公式：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview3.png?raw=true)
+![typora-theme-yangty-preview3](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview3.png)
 
 代码框和表格：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview4.png?raw=true)
+![typora-theme-yangty-preview4](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview4.png)
 
 专注模式：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview5.png?raw=true)
+![typora-theme-yangty-preview5](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview5.png)
 
 源代码模式：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview6.png?raw=true)
+![typora-theme-yangty-preview6](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview6.png)
 
 菜单：
 
-![](https://github.com/Cgfyufsygsm/typora-theme-yangty/blob/main/preview/preview7.png?raw=true)
+![typora-theme-yangty-preview7](https://yangty-pic.oss-cn-beijing.aliyuncs.com/typora-theme-yangty-preview7.png)
 
 ## 反馈
 
